@@ -8,6 +8,10 @@ window.addEventListener('DOMContentLoaded', async function() {
   // 🔥 start here: write the recipe (algorithm), then write the code
   // 🔥 select element to modify
   let pagemodifyelement = document.querySelector (`.rides`)
+
+  // 🔥 Empty rides div element
+  pagemodifyelement.innerHTML = ``
+
   // 🔥 looping data through the template to print to html
 for (let i=0; i < json.length; i++) {
   // 🔥 using conditionals to check service level
@@ -57,8 +61,4 @@ for (let i=0; i < json.length; i++) {
         </div>
     `
     );}
-  
-// 🔥 Empty rides div element
-pagemodifyelement.innerHTML = ``
-
   })
